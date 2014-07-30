@@ -1,0 +1,13 @@
+extends layout
+
+block content
+	.container
+		h1 Applicants
+		ul#applications.list-unstyled
+			for applicant3 in applicants2  
+				li <strong> Name: #{applicant3.name} </strong>
+				li Bio: #{applicant3.bio}
+				li Skills: #{applicant3.skills}
+				li Years: #{applicant3.years}
+				li Why: #{applicant3.why}
+				p 
